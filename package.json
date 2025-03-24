@@ -1,0 +1,24 @@
+{
+  "name": "waymo",
+  "version": "1.0.0",
+  "description": "Waymo is the world’s first autonomous ride-hailing service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarouman54/Waymo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sarouman54/Waymo/issues"
+  },
+  "homepage": "https://github.com/Sarouman54/Waymo#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
