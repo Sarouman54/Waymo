@@ -1,10 +1,8 @@
 const http = require('http');
+const connectDB = require('./config/db');
 const app = require('./app');
-const mongoose = require ('mongoose');
 
-mongoose.connect(process.env.ATLAS_URI)
-    .then(() => console.log('🟢 Connexion à MongoDB réussie !'))
-    .catch((error) => console.log('🔴 Connexion à MongoDB échouée !', process.env.ATLAS_URI));
+connectDB();
 
 app.set('port', process.env.PORT || 3000);
 const server = http.createServer(app);
